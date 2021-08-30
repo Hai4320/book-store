@@ -1,0 +1,9 @@
+.QuickBar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    right: 0;
+    top: 16rem;
+    transition: all 0.2s ease-in-out
+}

@@ -1,0 +1,43 @@
+.SearchBar{
+    .SearchBox{
+        width: 30rem;
+        height: 3rem;
+        background-color: rgba(255, 255, 255,0.8);
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 5px;
+        align-items: center;
+        display: flex;
+
+        .SearchInput{
+            border: none;
+            width: 90%;
+            height: 100%;
+            padding-left: 1.5rem;
+            font-size: 0.9rem;
+            background-color: transparent;
+            &:focus{
+                outline: none;
+            }
+            &::-webkit-search-cancel-button{
+                -webkit-appearance: none;
+            }
+        }
+        .SearchBtn{
+            width: 4rem;
+            height: 100%;
+            border: none;
+            background-color: #118768;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+                transition: 0.2s ease-in-out;
+            }
+
+            .SearchIcon{
+                font-size: 1rem;
+                color: #FFF;
+            }
+        }
+    }
+}

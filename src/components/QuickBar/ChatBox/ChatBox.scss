@@ -1,0 +1,38 @@
+.ChatBoxContainer{
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.2s ease;
+    margin: 2px 0;
+    .ChatBoxBtn{
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #f78888;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            opacity: 0.9;
+            padding-right: 1rem;
+        }
+        .CartBtn{
+            color: #fff;
+            font-size: 1.1rem;
+        }
+    }
+    
+    .ChatBoxInfor{
+        width: 10rem;
+        height: 3.5rem;
+        background-color: #232A34;
+        color: #fff;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem;
+        box-sizing: border-box;
+        overflow: hidden;
+        line-height: 1.25rem;
+        transition: all 0.5s ease-in-out;
+    }
+}

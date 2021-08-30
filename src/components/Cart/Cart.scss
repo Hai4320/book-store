@@ -1,0 +1,144 @@
+    .CartContainer{
+        margin-top: 2rem;
+        .CartBorder{
+            width: 15rem;
+            height: 25rem;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #EEF2F5;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px #999;
+            .CartImageContainer{
+                height: 15rem;
+                width: 15rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                position: relative;
+                border-radius: 5px;
+                color: transparent;
+                &:hover .CartAction{
+                    opacity: 1;
+                    transition: 0.4s ease-in-out;
+                    .CartBtn{
+                        transform: translate(0px, 0px);
+                        transition: 0.3s ease-in-out;
+                        opacity: 1;
+                    }
+                }
+                .CartImage{
+                    height: 15rem;
+                    
+                }
+                
+                .CartAction{
+                    display: flex;
+                    background-color: rgba(17,135,103,0.7);
+                    width: 15rem;
+                    height: 15rem;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    transform-style: flat;
+                    -webkit-font-smoothing: antialiased;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    opacity: 0;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    outline: none;
+                    .CartBtn{
+                        position: relative;
+                        width: 5rem;
+                        height: 2rem;
+                        border: 5px solid #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        color: #000;
+                        &:hover{
+                           background-color: #fff;
+                           transition: 0.2s ease-in-out;
+                        } 
+                    }
+                    .detailAction{
+                        transform: translate(0, -40px);
+                        opacity: 0;
+                    }
+                    .addAction{
+                        transform: translate(0, 40px);
+                        opacity: 0;
+                    }
+                }
+            }
+            .CartInfor{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0.5rem;
+                box-sizing:border-box;
+                .CartName{
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                    color: #000;
+                    cursor: pointer;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis;
+                    line-height: 1.2rem;
+                    max-height: 2.4rem;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .CartAuthor{
+                    text-align: center;
+                    align-items: center;
+                    color: #777;
+                    width: 100%;
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    .AuthorName{
+                        color: #118768;
+                        cursor: pointer;
+                        font-weight: 600;
+                    }
+                }
+                .CartPriceContainer{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    .CartSale{
+                        margin-left: 5px;
+                        width: 2.5rem;
+                        height: 1.2rem;
+                        font-size: 0.8rem;
+                        background-color: #FF4C57;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 3px;
+                    }
+                }
+                .CartStar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }

@@ -1,0 +1,20 @@
+
+.logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .logoTitle{
+        color: #FFF;
+        text-align: center;
+        font-size: 1.4rem;
+        width: 100%; 
+        font-family: 'Nunito', sans-serif;
+    }
+    .logoImage{
+        width: 4rem;
+        height: 4rem;
+        
+    }
+}

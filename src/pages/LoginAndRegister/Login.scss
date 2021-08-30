@@ -1,0 +1,92 @@
+.Login{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: #eef2f5;
+    .LoginContainer{
+        margin: 1rem 0;
+        width: 50rem;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        .LoginForm{
+            margin: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            .InputContainer{
+                width: 28rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1rem;
+                font-weight: bold;
+                color: #666;
+                .Input{
+                    height: 2rem;
+                    width:  20rem;
+                    &:focus{
+                        border-color: #118768;
+                    }
+                }
+                
+            }
+            .AcceptTerm{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+                .textAccept{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .link{
+                        color: #1D81D5;
+                        cursor: pointer;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+            }
+            .LoginBtn{
+                margin-top: 2rem;
+                width: 6rem;
+                height: 2.5rem;
+                background-color: #118768;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;    
+                transition: all 0.2s ease-in-out;
+                font-weight: bold;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid #118768;
+                    color: #118768;
+                }
+            }
+            .LoginBtnUnacctive{
+                margin-top: 2rem;
+                width: 6rem;
+                height: 2.5rem;
+                background-color: #118768;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                font-weight: bold;
+                opacity: 0.7;
+            }
+        }
+    }
+}

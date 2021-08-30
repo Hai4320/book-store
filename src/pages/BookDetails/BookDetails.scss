@@ -1,0 +1,237 @@
+.BookDetails{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eef2f5;
+    .BookCartSection{
+        width: 90%;
+        display: flex;
+        background-color: #fff;
+        justify-content: center;
+        .ImageSection{
+            width: 40%;
+            height: 40rem;  
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .ImageShow{
+                width: 26rem;
+                height: 26rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: transparent;
+                .MainImage{
+                    height: 25rem;
+                }
+            }
+            .ImageList{
+                display: flex;
+                width: 26rem;
+                height: 10rem;
+                justify-content: flex-start;
+                align-items: center;
+                .SubImage{
+                    padding: 5px;
+                    height: 7rem;
+                    border: 1px solid #333;
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+        .CartSection{
+            width: 55%;
+            .CartForm{
+                display: flex;
+                margin-top: 1rem;
+                flex-direction: column;
+                .BookName{
+                    font-size: 2.2rem;
+                    font-weight: 400;
+                    color: #333;
+                    font-weight: 500;
+                }
+                .BookInfor{
+                    display: flex;
+                    height: 2rem;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .BookAuthor{
+                        font-size: 1rem;
+                        height: 1.1rem;
+                        max-width: 10rem;
+                        padding-right: 1rem;
+                        border-right: 2px solid #666;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .AuthorName{
+                            padding-left: 3px;
+                            color: #118768;
+                            cursor: pointer;
+                            font-weight: 600;
+                        }
+                    }
+                    .BookStar{
+                        margin: 0 1rem;
+                        font-size: 0.9rem;
+                        height: 1.1rem;
+                        padding-right: 1rem;
+                        border-right: 2px solid #666;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .BookRemain{
+                        margin: 0 1rem;
+                        font-size: 1rem;
+                        height: 1.1rem;
+                        padding-right: 1rem;
+                        border-right: 2px solid #666;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                .BookPrice{
+                    margin-top: 0.5rem;
+                    display: flex;
+                    padding: 0.5rem;    
+                    .PriceSell{
+                        font-size: 2rem;
+                        color: #F64C7E;
+                    }
+                    .PriceInfor{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        font-size: 0.9rem;
+                        margin-left: 1.5rem;
+                        .Price{
+                            text-decoration: line-through;
+                            color: #666;
+                        }
+                        .Sale{
+                            color: rgb(13, 92, 182);
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .BookProducer{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 1rem;
+                    .Producer{
+                        margin-bottom: 1rem;
+                        display: flex;
+                        color: #000;
+                        .ProducerName{
+                            color: #118768;
+                            font-weight: bold
+                        }
+                    }
+                }
+                .BookCount{
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #999;
+                    width: 5rem;
+                    height: 1.5rem;
+                    margin-top: 1rem;
+                    color: transparent;
+                    .CountDecrease{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 1.5rem;
+                        width: 1.75rem;
+                        color: #333;
+                        cursor: pointer;
+                    }
+                    .Count{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        border-left: 1px solid #999;
+                        border-right: 1px solid #999;
+                        color: #333;
+                        cursor: auto;
+                        font-size: 0.9rem;
+                    }
+                    .CountIncrease{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 1.5rem;
+                        width: 1.75rem;
+                        color: #333;
+                        cursor: pointer;
+                    }
+                }
+                .AddToCart{
+                    margin-top: 1rem;
+                    .AddToCartBtn{
+                        color: #fff;
+                        background-color: #118768;
+                        border: 1px solid #118768;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 10rem;
+                        height: 2.5rem;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        &:hover{
+                            color: #118768;
+                            background-color: transparent;
+                            border: 1px solid #118768;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .BookMoreInforSection{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        justify-content: center;
+        padding-top: 1rem;
+        border-top: 1px solid #999;
+        .TabBar{
+            display: flex;
+            justify-content: center;
+
+            .TabName{
+                height:2rem;
+                padding: 0.5rem;
+                cursor: pointer;
+                margin-right: 1rem;
+                &:hover{
+                    color: #118768;
+                }
+            }
+            .TabActive{
+                border-bottom: 3px solid #118768;
+                color: #118768;
+            }
+        }
+        .InforContainer{
+            padding: 0 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            .InforText{
+                width: 100%;
+                text-align: justify;
+            }
+        }
+    }
+}

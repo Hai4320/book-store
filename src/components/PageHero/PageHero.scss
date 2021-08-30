@@ -1,0 +1,51 @@
+.PageHero{
+    color: #fff;
+    width: 100%; 
+    height: 250px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    .BgImage{
+        width: 100%;
+    }
+    .PageHeroBG{
+        z-index: 3;
+        background-color: rgb(35, 42, 52,0.8);
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .HeroTitle{
+            font-size: 4rem;
+            font-weight:  700;
+            margin-top: 30px;
+        }
+        .HeroLinkConTainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1ABE7B;
+            .LinkBeforeContainer{
+                display: flex;
+                .linkBefore{
+                    display: flex;
+                    .Link{
+                        cursor: pointer;
+                        &:hover{
+                            color: #fff;
+                            transition: 0.2s ease-in-out;
+                        }
+                    }
+                    .hash{
+                        margin: 0 3px;
+                    }
+                }
+            }
+        }
+    }
+}

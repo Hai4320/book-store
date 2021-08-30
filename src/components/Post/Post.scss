@@ -1,0 +1,105 @@
+.PostContainer{
+    display: flex; 
+    justify-content: space-between;
+    width: 35rem;
+    height: 10rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #666;
+    &:hover{
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+    .PostImageContainer{
+        border-radius: 5px;
+        width: 10rem;
+        height: 10rem;
+        overflow: hidden;
+        cursor: pointer;
+        box-sizing: border-box;
+        color: transparent;
+        .PostImage{
+            height: 10rem;
+        }
+    }
+    .PostInforContainer{
+        width: 25rem; 
+        height: 100%;
+        padding-left: 1.5rem;
+        box-sizing: border-box;
+        .PostNameContainer{
+            width: 100%;
+            max-height: 2.6rem;
+            line-height: 1.3rem;
+            cursor: pointer;
+            .PostName{
+                font-size: 1.1rem;
+                &:hover{
+                    text-decoration: underline; 
+                }
+            }
+        }
+        .PostAuthorContainer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size:1rem;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            color: #777;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;
+            .PostAuthor{
+                margin-left: 0.5rem;
+                color: #118768;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline; 
+                }
+
+            }
+        }
+        .PostDateContainer{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size:1rem;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            color: #777;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.5rem;  
+            .PostDate{
+                margin-left: 0.5rem;
+                color: #F64C7E;
+                font-weight: bold;
+
+            }
+        }
+        .PostIndex{
+            display: flex;
+            justify-content: center;
+            color: #333;
+            .PostIndexGroup{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 1rem;
+                .PostIndexIcon{
+                    margin-right: 0.2rem;
+                    font-size: 0.8rem;
+                }
+                .PostIndexValue{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.ToTopContainer{
+    z-index: 1000;
+    position: fixed;
+    right: 3rem;
+    top: 640px;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    
+    .ToTopBorder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%; 
+        border: 3px solid #118768;
+        box-sizing: border-box;
+        overflow: hidden;
+        &:hover{
+            background: #118768;
+            transition: 0.2s ease-in-out;
+            .ToTopIcon{
+                color: #fff;
+            }
+        }
+        .ToTopIcon{
+            font-size: 1.5rem;
+            color: #118768;
+        }
+    }
+}

@@ -1,0 +1,192 @@
+.Store{
+    width: 100%;
+    .StoreContainer{
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        margin-bottom: 2rem;
+        .BookListSection{
+            display: flex;
+            align-items: center;
+            width: 70%;
+            box-sizing: border-box;
+            flex-direction: column;
+            .BookTypeSection{
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                margin: 0 2rem;
+                height: 3rem;
+                border-bottom: 1px solid rgba(0,0,0,0.5);
+                margin-top: 3rem;
+                .BookType{
+                    background-color: transparent;
+                    height: 100%;
+                    margin: 0 1rem;
+                    padding: 0 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-sizing: content-box;
+                    cursor: pointer;
+                    &:hover{
+                        color: #118768;
+                    }
+                }
+                .BookTypeActive{
+                    padding-top: 4px;
+                    border-bottom: 4px solid #118768;
+                    color: #118768;
+                }
+                
+
+            }
+            .SortSection{
+                margin-top: 1rem;
+                height: 3rem;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #F64C7E;
+                
+                .SortBox{
+                    height: 2rem;
+                    width: 12rem;
+                    padding: 2px;
+                    margin-left: 1rem;
+                    font-weight: 600;
+                }
+            }
+            .CartSection{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 1rem;
+            }
+        }
+        .FilterSection{
+            width: 18%;
+            margin-top: 8rem;
+            margin-left: 2rem;
+            
+            .FilterContainer{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                overflow: hidden;
+                box-sizing: border-box;
+                .FilterTitle{
+                    width: 100%;
+                    height: 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #041721;
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 2.5rem;
+                    border-bottom: groove 1px #333;
+                    text-shadow: 2px 2px 2px #F64C7E;
+                }
+                .FilterHashTag{
+                    width: 100%;
+                    padding: 1rem 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;   
+                    flex-direction: column;
+                    .hashtag{
+                        color:#fff;
+                        border-radius: 0.5rem;
+                        height: 1rem;
+                        padding: 4px;
+                        margin: 0.5rem 1rem;
+                        font-size: 0.8rem;
+                        background-color: #999;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+                .FilterGroup{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .FilterGroupTitle{
+                        width: 100%;
+                        height: 3rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #041721;
+                        color: #fff;
+                        margin: 2px 0;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.9;
+                            transition: 0.2s ease-in-out;
+                        }
+                        .TitleIcon{
+                            font-size: 0.7rem;
+                            line-height: 0.9rem;
+                            margin-left: 5px;
+                        }
+                    }
+                    .FilterDataContainer{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: column;
+                        transition: all 0.2s ease-in-out;
+                        margin-bottom: 1rem;
+                        .FilterData{
+                            width: 100%;
+                            height: 2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            border-bottom: 1px solid #118768;
+                            color: #000;
+                            .Icon{
+                                font-size: 0.8rem;
+                                color: #FFD700;
+                                margin-left: 5px;
+                            }
+                            &:hover{
+                                font-weight: bold;
+                            }
+                        }
+                        .DataSelect{
+                            background-color: #118768;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                    }
+                    .FilterBySearch{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        .FilterInput{
+                            margin: 1rem 1rem;
+                            padding: 2px;
+                            height: 1.5rem;
+                            width: 10rem;
+                            outline: none;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
